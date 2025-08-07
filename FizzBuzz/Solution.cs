@@ -11,6 +11,10 @@ public class Solution
             {
                 returnValue.Add("Fizz");
             }
+            else if (isDivisiableByFive(i))
+            {
+                returnValue.Add("Buzz");
+            }
             else
             {
                 returnValue.Add(i.ToString());
@@ -22,6 +26,15 @@ public class Solution
     private bool isDivisiableByThree(int input)
     {
         if (input % 3 == 0)
+        {
+            return true;
+        }
+        return false;
+    }
+    
+    private bool isDivisiableByFive(int input)
+    {
+        if (input % 5 == 0)
         {
             return true;
         }
