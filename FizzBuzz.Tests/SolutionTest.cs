@@ -10,7 +10,7 @@ public class SolutionTest
 {
 
     [Fact]
-    public void METHOD()
+    public void ShouldReturnFizzForNumberDivisibleByThree()
     {
         FizzBuzz.Solution solution = new();
         var expected = GenerateExpectedFizzBuzzListForInputThree();
