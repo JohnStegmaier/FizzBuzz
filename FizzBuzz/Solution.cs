@@ -7,7 +7,11 @@ public class Solution
     {
         for (int i = 1; i <= n; i++)
         {
-            if (isDivisiableByThree(i))
+            if (isDivisiableByThree(i) && isDivisiableByFive(i))
+            {
+                returnValue.Add("FizzBuzz");
+            }
+            else if (isDivisiableByThree(i))
             {
                 returnValue.Add("Fizz");
             }
